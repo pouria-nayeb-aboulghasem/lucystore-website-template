@@ -1,0 +1,31 @@
+@media screen and (min-width: 1150px) {
+    :root {
+        --fs-xxxl: 3.5rem;
+        --fs-xxl: 2.25rem;
+        --fs-xl: 1.5rem;
+        --fs-lg: 1.25rem;
+        --fs-md: 1rem;
+        --fs-sm: 0.875rem;
+        --fs-xs: 0.813rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        margin-inline: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1150px) {
+    .section {
+        padding-block: var(--space-8) var(--space-4);
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .container {
+        margin-inline: auto;
+    }
+}

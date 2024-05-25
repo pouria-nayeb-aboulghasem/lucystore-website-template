@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/app.min.css">
+    <title>فروشگاه لوازم آرایشی و بهداشتی لوسی</title>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="nav">
+            <nav class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" id="hamburger-menu">
+                            <i class="ri-menu-3-line"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="ri-heart-3-line"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" id="nav-search">
+                            <i class="ri-search-line"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="ri-shopping-cart-line"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="ri-user-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu active-menu" id="menu">
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <i class="ri-close-line" id="close-menu"></i>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__link--category" onclick="openCity(event, 'face')">
+                            <span>آرایشی</span>
+
+                            <i class="ri-arrow-left-line"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__link--category" onclick="openCity(event, 'skin')">
+                            <span>مراقب پوست</span>
+                            <i class="ri-arrow-left-line"></i>
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__link--category" onclick="openCity(event, 'hair')">
+                            <span>مراقب مو</span>
+                            <i class="ri-arrow-left-line"></i>
+                        </a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__link--category" onclick="openCity(event, 'perfume')">
+                            <span>عطر و ادکلن</span>
+                            <i class="ri-arrow-left-line"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="face" class="menu__list menu__data">
+                    <li class="menu_item">
+                        <button class="menu__link" id="menu-back">
+                            <i class="ri-arrow-right-line"></i>
+                            <span>بازگشت</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            پوست و صورت
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            چشم
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            لب
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            ناخن
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            ابزارهای آرایشی
+                        </a>
+                    </li>
+                </ul>
+
+                <ul id="skin" class="menu__list menu__data">
+                    <li class="menu_item">
+                        <button class="menu__link" id="menu-back">
+                            <i class="ri-arrow-right-line"></i>
+                            <span>بازگشت</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            پاک کننده
+                        </a>
+                    </li>
+                </ul>
+
+                <ul id="hair" class="menu__list menu__data">
+                    <li class="menu_item">
+                        <button class="menu__link" id="menu-back">
+                            <i class="ri-arrow-right-line"></i>
+                            <span>بازگشت</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            پاک کننده
+                        </a>
+                    </li>
+                </ul>
+
+                <ul id="perfume" class="menu__list menu__data">
+                    <li class="menu_item">
+                        <button class="menu__link" id="menu-back">
+                            <i class="ri-arrow-right-line"></i>
+                            <span>بازگشت</span>
+                        </button>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            رایحه زنانه
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            رایحه مردانه
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+
+    </main>
+
+    <footer class="footer" id="footer"></footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
