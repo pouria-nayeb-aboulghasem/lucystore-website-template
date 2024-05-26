@@ -82,11 +82,34 @@
             left: 0;
         }
     }
+
+    &__subcategory {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: var(--border-color);
+        padding: var(--space-1);
+        gap: var(--space-1);
+        border-radius: 4px;
+    }
+
+    &__sublink {
+        display: block;
+        font-size: var(--fs-sm);
+        color: var(--text-color);
+        padding: 0.35rem var(--space-1);
+        transition: all 0.4s;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
 }
 
 #menu-back {
     justify-content: flex-start;
     column-gap: var(--space-1);
+    background-color: var(--white-color);
+    color: var(--title-color);
 }
 
 .tab-active {

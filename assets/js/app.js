@@ -4,13 +4,25 @@ const menuListSubcategory = document.querySelectorAll(".menu__data");
 const closeMenu = document.querySelector("#close-menu");
 const hamburgerMenu = document.querySelector("#hamburger-menu");
 const menu = document.querySelector("#menu");
+const menuIcon = document.querySelector("#menu-icon");
 
 closeMenu.addEventListener("click", () => {
     menu.classList.remove("active-menu");
+    menuIcon.className = "ri-menu-3-line";
 });
 
+let isOpen = false;
 hamburgerMenu.addEventListener("click", () => {
-    menu.classList.add("active-menu");
+
+    if (isOpen) {
+        isOpen = false;
+        menu.classList.remove("active-menu");
+        menuIcon.className = "ri-menu-3-line";
+    } else {
+        isOpen = true;
+        menu.classList.add("active-menu");
+        menuIcon.className = "ri-close-line";
+    }
 });
 
 backBtns.forEach(backBtn => {
