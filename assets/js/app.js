@@ -11,18 +11,16 @@ closeMenu.addEventListener("click", () => {
     menuIcon.className = "ri-menu-3-line";
 });
 
-let isOpen = false;
-hamburgerMenu.addEventListener("click", () => {
-
-    if (isOpen) {
-        isOpen = false;
+menu.addEventListener("click", (e) => {
+    if (e.target.classList.contains("menu")) {
         menu.classList.remove("active-menu");
         menuIcon.className = "ri-menu-3-line";
-    } else {
-        isOpen = true;
-        menu.classList.add("active-menu");
-        menuIcon.className = "ri-close-line";
     }
+});
+
+hamburgerMenu.addEventListener("click", () => {
+    menu.classList.add("active-menu");
+    menuIcon.className = "ri-close-line";
 });
 
 backBtns.forEach(backBtn => {
