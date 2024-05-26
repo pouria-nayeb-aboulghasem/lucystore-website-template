@@ -5,22 +5,33 @@ const closeMenu = document.querySelector("#close-menu");
 const hamburgerMenu = document.querySelector("#hamburger-menu");
 const menu = document.querySelector("#menu");
 const menuIcon = document.querySelector("#menu-icon");
+let isMenuOpen = true;
 
 closeMenu.addEventListener("click", () => {
+    isMenuOpen = true;
     menu.classList.remove("active-menu");
     menuIcon.className = "ri-menu-3-line";
 });
 
 menu.addEventListener("click", (e) => {
     if (e.target.classList.contains("menu")) {
+        isMenuOpen = true;
         menu.classList.remove("active-menu");
         menuIcon.className = "ri-menu-3-line";
     }
 });
 
 hamburgerMenu.addEventListener("click", () => {
-    menu.classList.add("active-menu");
-    menuIcon.className = "ri-close-line";
+    if (isMenuOpen) {
+        isMenuOpen = false;
+        menu.classList.add("active-menu");
+        menuIcon.className = "ri-close-line";
+    } else {
+        isMenuOpen = true;
+        menu.classList.remove("active-menu");
+        menuIcon.className = "ri-menu-3-line";
+
+    }
 });
 
 backBtns.forEach(backBtn => {

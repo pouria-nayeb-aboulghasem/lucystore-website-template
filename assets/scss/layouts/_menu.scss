@@ -21,7 +21,7 @@
         left: 50%;
         transform: translateX(-50%);
         bottom: calc(var(--header-height) + var(--space-5));
-        border-radius: 8px;
+        border-radius: 4px;
         overflow: hidden;
     }
 
@@ -91,9 +91,12 @@
     &__subcategory {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        background-color: var(--border-color);
         padding: var(--space-1);
         gap: var(--space-1);
+    }
+
+    &__subitem {
+        background-color: var(--border-color);
         border-radius: 4px;
     }
 
@@ -115,6 +118,9 @@
     column-gap: var(--space-1);
     background-color: var(--white-color);
     color: var(--title-color);
+    display: inline-flex;
+    padding: var(--space-2) var(--space-1);
+    font-size: var(--fs-lg);
 }
 
 .tab-active {
