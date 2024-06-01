@@ -22,8 +22,10 @@
     }
 
     &__link {
+        position: relative;
         color: var(--text-color);
         font-size: var(--fs-xxl);
+        transition: opacity 0.4s, color 0.25s;
 
         &:nth-child(even) {
             font-size: var(--fs-xxxl);
@@ -31,6 +33,26 @@
 
         &:hover {
             color: var(--primary-color);
+            opacity: 0.75;
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        top: -0.25rem;
+        right: -0.45rem;
+        font-size: var(--fs-md);
+        display: inline-flex;
+        width: 9px;
+        height: 10px;
+        padding: 0.52rem 0.5rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        &--primary {
+            background-color: var(--primary-color);
+            color: var(--white-color);
         }
     }
 }
