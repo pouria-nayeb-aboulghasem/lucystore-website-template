@@ -5,6 +5,9 @@ const closeMenu = document.querySelector("#close-menu");
 const hamburgerMenu = document.querySelector("#hamburger-menu");
 const menu = document.querySelector("#menu");
 const menuIcon = document.querySelector("#menu-icon");
+const search = document.querySelector("#search");
+const navSearch = document.querySelector("#nav-search");
+const searchClose = document.querySelector("#search-close");
 let isMenuOpen = true;
 
 closeMenu.addEventListener("click", () => {
@@ -63,3 +66,11 @@ function openCity(evt, cityName) {
 
     evt.currentTarget.className += " tab-active";
 }
+
+navSearch.addEventListener("click", () => {
+    search.classList.add("active");
+});
+
+searchClose.addEventListener("click", () => {
+    search.classList.remove("active");
+});
