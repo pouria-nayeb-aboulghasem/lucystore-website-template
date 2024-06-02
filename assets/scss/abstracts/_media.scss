@@ -10,6 +10,14 @@
     }
 }
 
+@media screen and (max-width: 1150px) {
+    .search {
+        &__close {
+            font-size: var(--fs-xxxl);
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .search {
         &__form {
@@ -38,12 +46,16 @@
             grid-template-columns: 2fr 75px 35px;
         }
     }
-}
 
-@media screen and (max-width: 1150px) {
-    .search {
-        &__close {
-            font-size: var(--fs-xxxl);
+    .showcase {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .special {
+        &__list {
+            grid-template-columns: 1fr;
         }
     }
 }
