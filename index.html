@@ -16,31 +16,31 @@
             <nav class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#" class="nav__link" id="hamburger-menu">
+                        <button class="nav__link" id="hamburger-menu">
                             <i class="ri-menu-3-line" id="menu-icon"></i>
-                        </a>
+                        </button>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
+                        <button class="nav__link">
                             <i class="ri-heart-3-line"></i>
                             <span class="nav__badge nav__badge--primary">0</span>
-                        </a>
+                        </button>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link" id="nav-search">
+                        <button class="nav__link" id="nav-search">
                             <i class="ri-search-line"></i>
-                        </a>
+                        </button>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
+                        <button class="nav__link">
                             <i class="ri-shopping-cart-line"></i>
                             <span class="nav__badge nav__badge--primary">0</span>
-                        </a>
+                        </button>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
+                        <button class="nav__link">
                             <i class="ri-user-line"></i>
-                        </a>
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -373,7 +373,7 @@
                         <input class="search__query" type="text" name="query" id="query" placeholder="جستجو محصول..." />
 
                         <select class="search__category" name="category" id="category">
-                            <option value="">انتخاب دسته بندی</option>
+                            <option value="">دسته بندی</option>
                             <option value="مراقب-ناخن">مراقب ناخن</option>
                             <option value="مراقب-پوست">مراقب پوست</option>
                             <option value="مراقب-مو">مراقب مو</option>
@@ -391,10 +391,98 @@
     </header>
 
     <main class="main" id="main">
-        <div class="showcase">
+        <div class="showcase section">
             <div class="showcase__container container">
-                <div class="showcase__content">
-                    <img src="assets/imgs/resources/care-cactus.png" alt="">
+                <section class="showcase__content">
+                    <h3 class="showcase__title">پشنهاد ویژه</h3>
+                    <ul class="showcase__list">
+
+                        <!-- item -->
+                        <li>
+                            <a href="#">
+                                <img src="assets/imgs/resources/moisture.jpg" alt="" class="showcase__img">
+                            </a>
+                        </li>
+                        <!-- /item -->
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/imgs/resources/sinre.jpg" alt="" class="showcase__img">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/imgs/resources/moisture.jpg" alt="" class="showcase__img">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/imgs/resources/sinre.jpg" alt="" class="showcase__img">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/imgs/resources/moisture.jpg" alt="" class="showcase__img">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="assets/imgs/resources/sinre.jpg" alt="" class="showcase__img">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="special section">
+            <div class="special__container container">
+                <div class="special__content">
+                    <h3 class="special__title">پشنهاد ویژه</h3>
+
+                    <ul class="special__list">
+                        <!-- item -->
+                        <li>
+                            <a href="#">
+                                <figure class="special__figure">
+                                    <img src="assets/imgs/resources/makeup.jpg" alt="" class="special__img">
+                                    <figcaption class="special__caption">آرایشی</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <!-- /item -->
+
+                        <li>
+                            <a href="#">
+                                <figure class="special__figure">
+                                    <img src="assets/imgs/resources/perfume.jpg" alt="" class="special__img">
+                                    <figcaption class="special__caption">عطر و ادکلن</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <figure class="special__figure">
+                                    <img src="assets/imgs/resources/anti-acne.jpg" alt="" class="special__img">
+                                    <figcaption class="special__caption">ضد جوش</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <figure class="special__figure">
+                                    <img src="assets/imgs/resources/shampoo.jpg" alt="" class="special__img">
+                                    <figcaption class="special__caption">شامپو</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -13,11 +13,17 @@
 @media screen and (max-width: 768px) {
     .search {
         &__form {
-            grid-template-columns: 2fr 130px 35px;
+            grid-template-columns: 2fr 100px 35px;
         }
 
         &__close {
             top: var(--space-2);
+        }
+    }
+
+    .showcase {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
@@ -49,6 +55,7 @@
 
     .container {
         margin-inline: auto;
+        max-width: 1115px;
     }
 
     .nav {
